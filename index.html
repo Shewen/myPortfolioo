@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body x-data="{navbarOpen: false}">
+  <header>
+    <div class="nav-link">
+      <a href="#" class="logo">OLUWASEUN</a>
+      <nav>
+        <button @click="navbarOpen = !navbarOpen"><i class="fa fa-bars"></i></button>
+        <ul :class="{'trasnslate-x-full': !navbarOpen, 'translate-x-0': navbarOpen}">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Hire me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero-container" id="home">
+      <div class="hero">
+        <div class="text">
+          <h1>Let's Make The
+            Web Beautiful.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Porro beatae error laborum ab amet sunt recusandae? Reiciendis natus perspiciatis optio.</p>
+          <button>Hire Me</button>
+        </div>
+        <div class="img-wrapper">
+          <img src="https://raw.githubusercontent.com/tejinder-sharma/pics/ae2ccbaa5aea13b25acc4c0708b30a32674a687a/Ecommerce%20campaign-pana.svg" alt="Catalogue-pana.svg">
+        </div>
+
+      </div>
+
+    </section>
+    <section class="work" id="projects">
+      <div class="work-container">
+        <div class="heading">
+          <h2>My Work</h2>
+          <span></span>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium quia, molestiae eum, Earum
+            repellat ipsam, distinctio ullam atque fuga dolorem!</p>
+        </div>
+        <div class="project">
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>Image Gallery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/4126724/pexels-photo-4126724.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>E-commerce</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/811587/pexels-photo-811587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>Image Gallery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/163097/twitter-social-media-communication-internet-network-163097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>Product</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="profile">
+              <img src="https://images.pexels.com/photos/811587/pexels-photo-811587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+              <div class="desc">
+                <h3>Landing Page</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
